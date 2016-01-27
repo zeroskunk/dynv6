@@ -74,7 +74,6 @@ else
 #send address to dynv6
   filepath=$HOME/.${public_dns}.addr4
   last_ip=$(tail -n1 $filepath)
-  #echo $bin  "http://ipv4.dynv6.com/api/update?hostname=$public_dns&ipv4=$public_ip&token=$token"
   $bin "http://ipv4.dynv6.com/api/update?hostname=$public_dns&ipv4=$public_ip&token=$token" 2> $filepath
 # save current address
         echo "old_ip" $last_ip
