@@ -3,7 +3,6 @@
 # ADD A CRONJOB (crontab -e)
 # */20 * * * * /usr/sbin/dynv6 <public_dns> <token> > /var/log/dynv6 2>&1
 
-
 # Line 17 if systemwide Token is given you need no
 # second param, if second toke is given it will be used
 # reguadless of sytem wide token!!
