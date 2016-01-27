@@ -64,11 +64,6 @@ else
   public_ip=$test_ip
 fi
 
-#  if [ $ppp0_ip != $public_ip ]; then
-#    public_ip=$ppp0_ip
-#    echo $ppp0_ip "this is your ppp0 ip"
-#  fi
-
 if [ $current_ip == $public_ip ]; then
   echo $(date) "your IP is up to date"
   exit 1
